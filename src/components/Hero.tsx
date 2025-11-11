@@ -96,11 +96,13 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <FiPhone className="text-primary" />
-              <span className="font-mono">+966 55 214 9644</span>
+              <a href="tel:+966552149644" className="font-mono hover:text-primary transition-colors">
+                +966 55 214 9644
+              </a>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <FiMail className="text-primary" />
-              <a href="mailto:amiraup17@gmail.com" className="hover:text-primary transition-colors">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amiraup17@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 amiraup17@gmail.com
               </a>
             </div>

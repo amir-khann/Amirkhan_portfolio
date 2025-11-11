@@ -13,7 +13,7 @@ const Contact = () => {
       icon: FiMail,
       label: "Email",
       value: "amiraup17@gmail.com",
-      href: "mailto:amiraup17@gmail.com",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=amiraup17@gmail.com",
       color: "primary",
     },
     {
@@ -108,7 +108,9 @@ const Contact = () => {
             <div className="relative inline-block">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-xl opacity-30"></div>
               <a
-                href="mailto:amiraup17@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=amiraup17@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="relative inline-block group px-8 sm:px-12 py-4 sm:py-6 bg-primary text-primary-foreground rounded-xl font-semibold text-lg sm:text-xl overflow-hidden transition-all hover:shadow-2xl hover:shadow-primary/50"
               >
                 <span className="relative z-10 flex items-center gap-2">
