@@ -1,12 +1,19 @@
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const NotFound = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
-  }, [location.pathname]);
+    // Handle the case where the pathname includes the basename
+    const pathname = location.pathname;
+    if (pathname === "/Amirkhan_portfolio/" || pathname === "/Amirkhan_portfolio") {
+      navigate("/", { replace: true });
+      return;
+    }
+    console.error("404 Error: User attempted to access non-existent route:", pathname);
+  }, [location.pathname, navigate]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
