@@ -6,13 +6,20 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Handle the case where the pathname includes the basename
-    const pathname = location.pathname;
-    if (pathname === "/Amirkhan_portfolio/" || pathname === "/Amirkhan_portfolio") {
+    // Get the actual window pathname (before React Router basename stripping)
+    const windowPath = window.location.pathname;
+    const routerPath = location.pathname;
+    
+    // Check if we're at the root path (with or without basename)
+    if (windowPath === "/Amirkhan_portfolio/" || windowPath === "/Amirkhan_portfolio" || 
+        routerPath === "/" || routerPath === "") {
       navigate("/", { replace: true });
       return;
     }
-    console.error("404 Error: User attempted to access non-existent route:", pathname);
+    // Only log error if it's not the root path
+    if (routerPath !== "/" && routerPath !== "") {
+      console.error("404 Error: User attempted to access non-existent route:", routerPath, "Window path:", windowPath);
+    }
   }, [location.pathname, navigate]);
 
   return (
