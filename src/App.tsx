@@ -9,20 +9,8 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Component to handle root path redirect
+// Component to handle root path redirect - simplified for custom domain
 const RootRedirect = () => {
-  const location = useLocation();
-  
-  useEffect(() => {
-    const windowPath = window.location.pathname;
-    // If we're at the root path with basename, ensure we're on the correct route
-    if (windowPath === "/Amirkhan_portfolio/" || windowPath === "/Amirkhan_portfolio") {
-      if (location.pathname !== "/") {
-        window.history.replaceState(null, "", "/Amirkhan_portfolio/");
-      }
-    }
-  }, [location.pathname]);
-  
   return null;
 };
 
@@ -31,7 +19,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/Amirkhan_portfolio/">
+      <BrowserRouter>
         <RootRedirect />
         <Routes>
           <Route path="/" element={<Index />} />
