@@ -19,8 +19,8 @@ const Contact = () => {
     {
       icon: FiPhone,
       label: "Phone",
-      value: "+966 55 214 9644",
-      href: "tel:+966552149644",
+      value: "+966 57 092 0737",
+      href: "tel:+966570920737",
       color: "secondary",
     },
     {
@@ -35,11 +35,11 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 sm:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background"></div>
-      
+
       {/* Animated Background Elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-20 right-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}
@@ -59,7 +59,7 @@ const Contact = () => {
                 Get In Touch
               </h2>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-                I'm currently open to new opportunities and interesting projects. 
+                I'm currently open to new opportunities and interesting projects.
                 Whether you have a question or just want to say hi, I'll get back to you!
               </p>
             </motion.div>

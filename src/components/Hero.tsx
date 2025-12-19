@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone, FiDownload } from "react-icons/fi";
 import heroBg from "@/assets/hero-bg.jpg";
+import cvFile from "@/assets/Amir_Khan_FS.pdf";
 
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
   const fullText = "Senior Full Stack Developer";
-  
+
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -17,7 +18,7 @@ const Hero = () => {
         clearInterval(timer);
       }
     }, 100);
-    
+
     return () => clearInterval(timer);
   }, []);
 
@@ -26,9 +27,9 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/90 z-10"></div>
-        <img 
-          src={heroBg} 
-          alt="Technology background" 
+        <img
+          src={heroBg}
+          alt="Technology background"
           className="w-full h-full object-cover opacity-30"
         />
       </div>
@@ -79,8 +80,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4"
           >
-            Experienced MERN Stack Developer with <span className="text-primary font-semibold">5+ years</span> of expertise in building 
-            responsive, user-friendly web applications. Passionate about delivering seamless digital experiences through 
+            Experienced MERN Stack Developer with <span className="text-primary font-semibold">5+ years</span> of expertise in building
+            responsive, user-friendly web applications. Passionate about delivering seamless digital experiences through
             thoughtful design, clean code, and thorough testing.
           </motion.p>
 
@@ -96,8 +97,8 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <FiPhone className="text-primary" />
-              <a href="tel:+966552149644" className="font-mono hover:text-primary transition-colors">
-                +966 55 214 9644
+              <a href="tel:+966570920737" className="font-mono hover:text-primary transition-colors">
+                +966 57 092 0737
               </a>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
@@ -121,7 +122,19 @@ const Hero = () => {
               <span className="relative z-10">Get In Touch</span>
               <div className="absolute inset-0 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
             </a>
-            
+
+            <a
+              href={cvFile}
+              download="Amir_Khan_CV.pdf"
+              className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-background border border-primary text-primary rounded-lg font-medium text-base sm:text-lg overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20 w-full sm:w-auto flex items-center justify-center gap-2"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                <FiDownload />
+                Download CV
+              </span>
+              <div className="absolute inset-0 bg-primary/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+            </a>
+
             <div className="flex items-center gap-4 sm:gap-6">
               <a
                 href="https://github.com/amir-khann"

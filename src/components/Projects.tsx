@@ -37,12 +37,26 @@ const Projects = () => {
       tags: ["React", "Education", "UI/UX", "Progressive Web App"],
       gradient: "from-primary via-secondary to-accent",
     },
+    {
+      name: "React Storybook",
+      url: "https://amir-khann.github.io/React_Story_Book/",
+      description: "Material-UI Component Storybook: A comprehensive React component library and design system management platform featuring 60+ interactive Material-UI components with enterprise theme customization capabilities.",
+      tags: ["React", "Material-UI", "Storybook", "Enterprise"],
+      gradient: "from-primary to-accent",
+    },
+    {
+      name: "Khafif",
+      url: "https://amir-khann.github.io/khafif/",
+      description: "Restaurant app created in Next.js",
+      tags: ["Next.js", "Restaurant", "App"],
+      gradient: "from-secondary to-primary",
+    },
   ];
 
   return (
     <section id="projects" className="py-20 sm:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/20 to-background"></div>
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}
