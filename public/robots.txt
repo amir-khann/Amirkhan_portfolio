@@ -12,3 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+Sitemap: https://amir-khan-portfolio.com/sitemap.xml

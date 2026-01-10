@@ -40,13 +40,13 @@ const Hero = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-glow-pulse"></div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20 pb-20 sm:pb-0">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-4 sm:mb-6"
+            className="mb-4 sm:mb-6 mt-4 sm:mt-0"
           >
             <span className="text-primary font-mono text-sm sm:text-base md:text-lg">Hi, my name is</span>
           </motion.div>
