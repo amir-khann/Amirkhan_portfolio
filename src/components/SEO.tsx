@@ -12,7 +12,7 @@ interface SEOProps {
 const SEO = ({
     title = "Amir Khan - Senior Full Stack Developer",
     description = "Portfolio of Amir Khan - Experienced MERN Stack Developer with 5+ years of expertise in building responsive, user-friendly web applications",
-    url = "https://amir-khan-portfolio.com", // Keeping a default, but should be updated with actual domain
+    url = "https://www.amircodes.online", // Keeping a default, but should be updated with actual domain
     image = "/og-image.png", // Assuming an OG image exists or will be added
     type = "website",
     keywords = "Amir Khan, Full Stack Developer, MERN Stack, React Developer, Web Developer, Portfolio, React developer Saudi Arabia, Frontend developer KSA, React UI developer, MUI React developer"
