@@ -83,6 +83,7 @@ const Hero = () => {
             Experienced MERN Stack Developer with <span className="text-primary font-semibold">5+ years</span> of expertise in building
             responsive, user-friendly web applications. Passionate about delivering seamless digital experiences through
             thoughtful design, clean code, and thorough testing.
+            <span className="sr-only">Looking for the best frontend developer in KSA? Experineced in React and Modern Web Tech.</span>
           </motion.p>
 
           <motion.div

@@ -10,12 +10,12 @@ interface SEOProps {
 }
 
 const SEO = ({
-    title = "Amir Khan - Senior Full Stack Developer",
-    description = "Portfolio of Amir Khan - Experienced MERN Stack Developer with 5+ years of expertise in building responsive, user-friendly web applications",
+    title = "Amir Khan - Best Frontend Developer in KSA",
+    description = "Looking for the best frontend developer in KSA? Amir Khan is a Senior Full Stack Developer specializing in React, MERN Stack, and modern web technologies in Saudi Arabia.",
     url = "https://www.amircodes.online", // Keeping a default, but should be updated with actual domain
     image = "/og-image.png", // Assuming an OG image exists or will be added
     type = "website",
-    keywords = "Amir Khan, Full Stack Developer, MERN Stack, React Developer, Web Developer, Portfolio, React developer Saudi Arabia, Frontend developer KSA, React UI developer, MUI React developer"
+    keywords = "Best Frontend Developer in KSA, Amir Khan, Full Stack Developer, MERN Stack, React Developer, Web Developer, Portfolio, React developer Saudi Arabia, Frontend developer KSA, React UI developer, MUI React developer, Top Developer Riyadh"
 }: SEOProps) => {
     const siteTitle = title === "Amir Khan - Senior Full Stack Developer" ? title : `${title} | Amir Khan`;
 
