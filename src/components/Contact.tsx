@@ -111,13 +111,13 @@ const Contact = () => {
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=amiraup17@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative inline-block group px-8 sm:px-12 py-4 sm:py-6 bg-primary text-primary-foreground rounded-xl font-semibold text-lg sm:text-xl overflow-hidden transition-all hover:shadow-2xl hover:shadow-primary/50"
+                className="relative inline-block group px-8 sm:px-12 py-4 sm:py-6 bg-transparent border-2 border-primary text-primary rounded-xl font-semibold text-lg sm:text-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/25 hover:text-primary-foreground"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <FiMail />
                   Send Me An Email
                 </span>
-                <div className="absolute inset-0 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                <div className="absolute inset-0 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
               </a>
             </div>
 

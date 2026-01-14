@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
+import profileImage from "@/assets/amir-profile.jpg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,9 +36,8 @@ const Navigation = () => {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-card/80 backdrop-blur-lg border-b border-border" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-card/80 backdrop-blur-lg border-b border-border" : "bg-transparent"
+          }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
@@ -45,11 +45,25 @@ const Navigation = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="font-mono text-lg sm:text-xl font-bold"
+              className="flex items-center gap-3"
             >
-              <span className="text-primary">&lt;</span>
-              AK
-              <span className="text-primary">/&gt;</span>
+              <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-primary">
+                <img
+                  src={profileImage}
+                  alt="Amir Khan"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-bold text-lg sm:text-xl leading-none">
+                  Amir Khan
+                </span>
+                <span className="text-xs sm:text-sm text-muted-foreground font-mono">
+                  <span className="text-primary">&lt;</span>
+                  Senior Full Stack Developer
+                  <span className="text-primary">/&gt;</span>
+                </span>
+              </div>
             </motion.div>
 
             {/* Desktop Navigation */}
