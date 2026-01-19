@@ -31,7 +31,7 @@ const Experience = () => {
       title: "Front End Developer",
       company: "AppLab",
       location: "Doha, Qatar",
-      period: "02/2020 - 11/2022",
+      period: "02/2020 - 03/2022",
       color: "secondary",
       responsibilities: [
         "Provided Front End Website Development Using React.js, Material UI, Tailwind CSS and other CSS Frameworks",
@@ -46,7 +46,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 sm:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background"></div>
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}

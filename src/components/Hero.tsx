@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone, FiDownload } from "react-icons/fi";
 import heroBg from "@/assets/hero-bg.jpg";
-import cvFile from "@/assets/Amir_Khan_FS.pdf";
+import cvFile from "@/assets/AmirkhanFS.pdf";
 import profileImage from "@/assets/amir-profile.jpg";
 
 const Hero = () => {
